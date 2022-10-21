@@ -55,16 +55,16 @@ repeat until step5
 
 ## 3D printing simulation
 
-The material deposition is simulated using the ABAQUS *Model Change option, which allows to add element sets during the simulation.
+- The material deposition is simulated using the ABAQUS *Model Change option, which allows to add element sets during the simulation.
 We divided each filament into 5 element sets and added each one in a different step. The only considered load is the self-weigh, which actuates
 almost immedialy after the element deposition.
 
-The printing velocity is defined by the timing of the addition of each filament element section.
+- The printing velocity is defined by the timing of the addition of each filament element section.
 
-This simulation allows to predict the deformations that can arise due to the printing process of bioinks, such as hydrogels. These deformations can  be significative and have an impact in the overall mechanical properties of the final configuration. This tool can be used as a predictive tool to choose the best printing speed and printing sequence, in terms of minimizing unwanted deformations.
+- This simulation allows to predict the deformations that can arise due to the printing process of bioinks, such as hydrogels. These deformations can  be significative and have an impact in the overall mechanical properties of the final configuration. This tool can be used as a predictive tool to choose the best printing speed and printing sequence, in terms of minimizing unwanted deformations.
 
-The submitted files within the folder print_10mmps or print_5mmps can be easily changed to consider different printing velocities. We hope this tool will facilitate future analysis and can serve as a starting point for researchers, to further improve this work.
+- The submitted files within the folder print_10mmps or print_5mmps can be easily changed to consider different printing velocities. We hope this tool will facilitate future analysis and can serve as a starting point for researchers, to further improve this work.
 
 
-###### Please, cite this notebook if you use it withiin your research
+🔸 Please, cite this notebook if you use it withiin your research
 
