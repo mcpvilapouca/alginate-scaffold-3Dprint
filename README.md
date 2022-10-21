@@ -66,5 +66,5 @@ almost immedialy after the element deposition.
 - The submitted files within the folder print_10mmps or print_5mmps can be easily changed to consider different printing velocities. We hope this tool will facilitate future analysis and can serve as a starting point for researchers, to further improve this work.
 
 
-🔸 Please, cite this notebook if you use it withiin your research
+🔸 Please, cite this notebook if you use it within your research
 
