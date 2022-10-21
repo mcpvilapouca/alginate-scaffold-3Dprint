@@ -52,6 +52,6 @@ repeat until step5
 
 ## 3D printing simulation
 
-Here is a video of the 3D printing simulation of the scaffold at 5mm/s. We can see the deformations that arise from the self-weight of the material being deposited and açso the creep from the material viscoelasticity
+Here is a video of the 3D printing simulation of the scaffold at 5mm/s. We can see the deformations that arise from the self-weight of the material being deposited and also the creep from the material viscoelasticity
 
 <img width="862" alt="geometry" src="https://user-images.githubusercontent.com/95075305/197178767-0dbb6cb3-8fa2-4f3c-aab3-7ba99f1dba92.gif">
