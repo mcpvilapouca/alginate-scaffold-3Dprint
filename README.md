@@ -42,9 +42,12 @@ repeat until step5
 ###### Note: the files fibers1.inp and fibers2.inp need to be in the directory although they are not influencing the material model
 
 
-## Geometry
+## Geometry and Boundary Conditions
 
-The geometry represents a 4 layer scaffold, with a filament of 0.2mm, 6 filaments per layer and pore size of 0.8mm. Overall, a 5x5x0.8mm scaffold.
+- The geometry represents a 4 layer scaffold, with a filament of 0.2mm, 6 filaments per layer and pore size of 0.8mm. Overall, a 5x5x0.8mm scaffold.
+- The mesh includes 2255044 cubic finite elements (C3D8H)
+- The nodes in red are fixed in the three directions
 
 <img width="862" alt="geometry" src="https://user-images.githubusercontent.com/95075305/197171755-4a2cc10b-e6cd-434b-9db1-945690ba0625.png">
 
+## 3D printing simulation
