@@ -46,4 +46,5 @@ repeat until step5
 
 The geometry represents a 4 layer scaffold, with a filament of 0.2mm, 6 filaments per layer and pore size of 0.8mm. Overall, a 5x5x0.8mm scaffold.
 
-[scaffold_BC.pdf](https://github.com/mcpvilapouca/alginate-scaffold-3Dprint/files/9837986/scaffold_BC.pdf)
+![scaffold_BC](https://user-images.githubusercontent.com/95075305/197171301-c994a41b-745c-4571-9f1a-3688d6f2d1ae.png)
+
