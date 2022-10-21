@@ -1,4 +1,4 @@
-# Finite element simulation of scaffold 3D print
+# Finite element simulation of the 3D printing of scaffolds
 
 This repository includes a numerical framework for the 3D printing simulation of hydrogel scaffolds.
 The available .inp files are compatible with ABAQUS finite element software
@@ -43,3 +43,6 @@ repeat until step5
 
 
 ## Geometry
+
+The geometry represents a 4 layer scaffold, with a filament of 0.2mm, 6 filaments per layer and pore size of 0.8mm. Overall, a 5x5x0.8mm scaffold.
+
