@@ -51,3 +51,5 @@ repeat until step5
 <img width="862" alt="geometry" src="https://user-images.githubusercontent.com/95075305/197171755-4a2cc10b-e6cd-434b-9db1-945690ba0625.png">
 
 ## 3D printing simulation
+
+<img width="862" alt="geometry" src="https://user-images.githubusercontent.com/95075305/197178767-0dbb6cb3-8fa2-4f3c-aab3-7ba99f1dba92.gif">
