@@ -3,6 +3,9 @@
 This repository includes a numerical framework for the 3D printing simulation of hydrogel scaffolds.
 The available .inp files are compatible with ABAQUS finite element software
 
+<img width="700" alt="3Dprint" src="https://user-images.githubusercontent.com/95075305/197178767-0dbb6cb3-8fa2-4f3c-aab3-7ba99f1dba92.gif">
+
+
 ```bash
 ├── geometry
 │   ├──  geometry_meshed.inp   ----->  nodal coordinates, nodal conections, node and element
@@ -52,6 +55,16 @@ repeat until step5
 
 ## 3D printing simulation
 
-Here is a video of the 3D printing simulation of the scaffold at 5mm/s. We can see the deformations that arise from the self-weight of the material being deposited and also the creep from the material viscoelasticity
+The material deposition is simulated using the ABAQUS *Model Change option, which allows to add element sets during the simulation.
+We divided each filament into 5 element sets and added each one in a different step. The only considered load is the self-weigh, which actuates
+almost immedialy after the element deposition.
 
-<img width="862" alt="geometry" src="https://user-images.githubusercontent.com/95075305/197178767-0dbb6cb3-8fa2-4f3c-aab3-7ba99f1dba92.gif">
+The printing velocity is defined by the timing of the addition of each filament element section.
+
+This simulation allows to predict the deformations that can arise due to the printing process of bioinks, such as hydrogels. These deformations can  be significative and have an impact in the overall mechanical properties of the final configuration. This tool can be used as a predictive tool to choose the best printing speed and printing sequence, in terms of minimizing unwanted deformations.
+
+The submitted files within the folder print_10mmps or print_5mmps can be easily changed to consider different printing velocities. We hope this tool will facilitate future analysis and can serve as a starting point for researchers, to further improve this work.
+
+
+###### Please, cite this notebook if you use it withiin your research
+
