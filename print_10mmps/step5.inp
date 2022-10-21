@@ -1,0 +1,51 @@
+*RESTART, WRITE,read,step=140, FREQUENCY=20
+**
+**
+**
+*Step, name=hold,  nlgeom=YES, inc=2000
+*Static
+0.4,19.8, 1e-05, 0.4
+****
+**
+**
+**
+**
+**OUTPUT REQUESTS
+**
+*Output, field, frequency=4
+*Node Output, nset=scaffold_nodes
+RF, U
+*Element Output, elset=scaffold,directions=no
+S, SDV
+*Contact Output
+CDISP, CSTRESS
+**
+**
+*Output, history,frequency=10
+*Energy Output
+ALLIE, ALLSD
+*End Step
+**
+** *Step, name=reticulate,  nlgeom=YES, inc=2000
+** *Static
+** 1,605, 1e-05, 1
+** ****
+** **
+** **
+** **
+** **
+** **OUTPUT REQUESTS
+** **
+** *Output, field, frequency=5
+** *Node Output, nset=scaffold_nodes
+** RF, U
+** *Element Output, elset=scaffold,directions=no
+** S, SDV
+** *Contact Output
+** CDISP, CSTRESS
+** **
+** **
+** *Output, history,frequency=10
+** *Energy Output
+** ALLIE, ALLSD
+** *End Step

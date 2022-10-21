@@ -1,0 +1,1056 @@
+*RESTART, WRITE,read,step=105, FREQUENCY=20
+**
+**
+*Step, name=fil241, nlgeom=YES, inc=2000
+*Static
+0.02,0.2, 1e-05, 0.02
+****
+*CONTROLS, PARAMETERS=TIME INCREMENTATION
+, , , , , ,24,10, , , , , ,
+**
+*MODEL CHANGE, TYPE=ELEMENT, ADD=WITH STRAIN
+fil241
+**
+*MODEL CHANGE, TYPE=CONTACT PAIR, ADD
+S13,S24
+S14,S24
+S15,S24
+S16,S24
+S17,S24
+S18,S24
+**
+**
+*Dload, amplitude=activate
+filament_24, GRAV, 9810., 0., 0., 1.0
+** OUTPUT REQUESTS
+**
+*Output, field, frequency=2
+*Node Output, nset=scaffold_nodes
+RF, U
+*Element Output, elset=scaffold,directions=no
+S, SDV
+*Contact Output
+CDISP, CSTRESS
+**
+**
+*Output, history,frequency=4
+*Energy Output
+ALLIE, ALLSD
+*End Step
+**
+*Step, name=fil242, nlgeom=YES, inc=2000
+*Static
+0.02,0.2, 1e-05, 0.02
+****
+*CONTROLS, PARAMETERS=TIME INCREMENTATION
+, , , , , ,24,10, , , , , ,
+**
+*MODEL CHANGE, TYPE=ELEMENT, ADD=WITH STRAIN
+fil242
+**
+**
+** OUTPUT REQUESTS
+**
+*Output, field, frequency=2
+*Node Output, nset=scaffold_nodes
+RF, U
+*Element Output, elset=scaffold,directions=no
+S, SDV
+*Contact Output
+CDISP, CSTRESS
+**
+**
+*Output, history,frequency=4
+*Energy Output
+ALLIE, ALLSD
+*End Step
+**
+*Step, name=fil243, nlgeom=YES, inc=2000
+*Static
+0.02,0.2, 1e-05, 0.02
+****
+*CONTROLS, PARAMETERS=TIME INCREMENTATION
+, , , , , ,24,10, , , , , ,
+**
+*MODEL CHANGE, TYPE=ELEMENT, ADD=WITH STRAIN
+fil243
+**
+**
+**
+** *Dload, amplitude=activate
+** fil73, GRAV, 9810., 0., 0., 1.0
+** OUTPUT REQUESTS
+**
+*Output, field, frequency=2
+*Node Output, nset=scaffold_nodes
+RF, U
+*Element Output, elset=scaffold,directions=no
+S, SDV
+*Contact Output
+CDISP, CSTRESS
+**
+**
+*Output, history,frequency=4
+*Energy Output
+ALLIE, ALLSD
+*End Step
+**
+*Step, name=fil244, nlgeom=YES, inc=2000
+*Static
+0.02,0.2, 1e-05, 0.02
+****
+*CONTROLS, PARAMETERS=TIME INCREMENTATION
+, , , , , ,24,10, , , , , ,
+**
+*MODEL CHANGE, TYPE=ELEMENT, ADD=WITH STRAIN
+fil244
+**
+**
+**
+** *Dload, amplitude=activate
+** fil72, GRAV, 9810., 0., 0., 1.0
+** OUTPUT REQUESTS
+**
+*Output, field, frequency=2
+*Node Output, nset=scaffold_nodes
+RF, U
+*Element Output, elset=scaffold,directions=no
+S, SDV
+*Contact Output
+CDISP, CSTRESS
+**
+**
+*Output, history,frequency=4
+*Energy Output
+ALLIE, ALLSD
+*End Step
+**
+*Step, name=fil245, nlgeom=YES, inc=2000
+*Static
+0.02,0.2, 1e-05, 0.02
+****
+*CONTROLS, PARAMETERS=TIME INCREMENTATION
+, , , , , ,24,10, , , , , ,
+**
+*MODEL CHANGE, TYPE=ELEMENT, ADD=WITH STRAIN
+fil245
+**
+**
+**
+** *Dload, amplitude=activate
+** fil71, GRAV, 9810., 0., 0., 1.0
+** OUTPUT REQUESTS
+**
+*Output, field, frequency=2
+*Node Output, nset=scaffold_nodes
+RF, U
+*Element Output, elset=scaffold,directions=no
+S, SDV
+*Contact Output
+CDISP, CSTRESS
+**
+**
+*Output, history,frequency=4
+*Energy Output
+ALLIE, ALLSD
+*End Step
+**
+*Step, name=travel41, nlgeom=YES, inc=2000
+*Static
+0.02,0.54, 1e-05, 0.02
+****
+*CONTROLS, PARAMETERS=TIME INCREMENTATION
+, , , , , ,24,10, , , , , ,
+**
+**
+** OUTPUT REQUESTS
+**
+*Output, field, frequency=6
+*Node Output, nset=scaffold_nodes
+RF, U
+*Element Output, elset=scaffold,directions=no
+S, SDV
+*Contact Output
+CDISP, CSTRESS
+**
+**
+*Output, history,frequency=10
+*Energy Output
+ALLIE, ALLSD
+*End Step
+**
+*Step, name=fil235, nlgeom=YES, inc=2000
+*Static
+0.02,0.2, 1e-05, 0.02
+****
+*CONTROLS, PARAMETERS=TIME INCREMENTATION
+, , , , , ,24,10, , , , , ,
+**
+*MODEL CHANGE, TYPE=ELEMENT, ADD=WITH STRAIN
+fil235
+**
+**
+*MODEL CHANGE, TYPE=CONTACT PAIR, ADD
+S13,S23
+S14,S23
+S15,S23
+S16,S23
+S17,S23
+S18,S23
+**
+*Dload, amplitude=activate
+filament_23, GRAV, 9810., 0., 0., 1.0
+** OUTPUT REQUESTS
+**
+*Output, field, frequency=2
+*Node Output, nset=scaffold_nodes
+RF, U
+*Element Output, elset=scaffold,directions=no
+S, SDV
+*Contact Output
+CDISP, CSTRESS
+**
+**
+*Output, history,frequency=4
+*Energy Output
+ALLIE, ALLSD
+*End Step
+**
+*Step, name=fil234, nlgeom=YES, inc=2000
+*Static
+0.02,0.2, 1e-05, 0.02
+****
+*CONTROLS, PARAMETERS=TIME INCREMENTATION
+, , , , , ,24,10, , , , , ,
+**
+*MODEL CHANGE, TYPE=ELEMENT, ADD=WITH STRAIN
+fil234
+**
+**
+**
+** OUTPUT REQUESTS
+**
+*Output, field, frequency=2
+*Node Output, nset=scaffold_nodes
+RF, U
+*Element Output, elset=scaffold,directions=no
+S, SDV
+*Contact Output
+CDISP, CSTRESS
+**
+**
+*Output, history,frequency=4
+*Energy Output
+ALLIE, ALLSD
+*End Step
+**
+*Step, name=fil233, nlgeom=YES, inc=2000
+*Static
+0.02,0.2, 1e-05, 0.02
+****
+*CONTROLS, PARAMETERS=TIME INCREMENTATION
+, , , , , ,24,10, , , , , ,
+**
+*MODEL CHANGE, TYPE=ELEMENT, ADD=WITH STRAIN
+fil233
+**
+**
+**
+** *Dload, amplitude=activate
+** fil83, GRAV, 9810., 0., 0., 1.0
+** OUTPUT REQUESTS
+**
+*Output, field, frequency=2
+*Node Output, nset=scaffold_nodes
+RF, U
+*Element Output, elset=scaffold,directions=no
+S, SDV
+*Contact Output
+CDISP, CSTRESS
+**
+**
+*Output, history,frequency=4
+*Energy Output
+ALLIE, ALLSD
+*End Step
+**
+*Step, name=fil232, nlgeom=YES, inc=2000
+*Static
+0.02,0.2, 1e-05, 0.02
+****
+*CONTROLS, PARAMETERS=TIME INCREMENTATION
+, , , , , ,24,10, , , , , ,
+**
+*MODEL CHANGE, TYPE=ELEMENT, ADD=WITH STRAIN
+fil232
+**
+**
+**
+** *Dload, amplitude=activate
+** fil84, GRAV, 9810., 0., 0., 1.0
+** OUTPUT REQUESTS
+**
+*Output, field, frequency=2
+*Node Output, nset=scaffold_nodes
+RF, U
+*Element Output, elset=scaffold,directions=no
+S, SDV
+*Contact Output
+CDISP, CSTRESS
+**
+**
+*Output, history,frequency=4
+*Energy Output
+ALLIE, ALLSD
+*End Step
+**
+*Step, name=fil231, nlgeom=YES, inc=2000
+*Static
+0.02,0.2, 1e-05, 0.02
+****
+*CONTROLS, PARAMETERS=TIME INCREMENTATION
+, , , , , ,24,10, , , , , ,
+**
+*MODEL CHANGE, TYPE=ELEMENT, ADD=WITH STRAIN
+fil231
+**
+**
+**
+** *Dload, amplitude=activate
+** fil84, GRAV, 9810., 0., 0., 1.0
+** OUTPUT REQUESTS
+**
+*Output, field, frequency=2
+*Node Output, nset=scaffold_nodes
+RF, U
+*Element Output, elset=scaffold,directions=no
+S, SDV
+*Contact Output
+CDISP, CSTRESS
+**
+**
+*Output, history,frequency=4
+*Energy Output
+ALLIE, ALLSD
+*End Step
+**
+*Step, name=travel42, nlgeom=YES, inc=2000
+*Static
+0.02,0.54, 1e-05, 0.02
+****
+*CONTROLS, PARAMETERS=TIME INCREMENTATION
+, , , , , ,24,10, , , , , ,
+**
+**
+** OUTPUT REQUESTS
+**
+*Output, field, frequency=6
+*Node Output, nset=scaffold_nodes
+RF, U
+*Element Output, elset=scaffold,directions=no
+S, SDV
+*Contact Output
+CDISP, CSTRESS
+**
+**
+*Output, history,frequency=10
+*Energy Output
+ALLIE, ALLSD
+*End Step
+**
+*Step, name=fil221, nlgeom=YES, inc=2000
+*Static
+0.02,0.2, 1e-05, 0.02
+****
+*CONTROLS, PARAMETERS=TIME INCREMENTATION
+, , , , , ,24,10, , , , , ,
+**
+*MODEL CHANGE, TYPE=ELEMENT, ADD=WITH STRAIN
+fil221
+**
+**
+*MODEL CHANGE, TYPE=CONTACT PAIR, ADD
+S13,S22
+S14,S22
+S15,S22
+S16,S22
+S17,S22
+S18,S22
+**
+*Dload, amplitude=activate
+filament_22, GRAV, 9810., 0., 0., 1.0
+** OUTPUT REQUESTS
+**
+*Output, field, frequency=2
+*Node Output, nset=scaffold_nodes
+RF, U
+*Element Output, elset=scaffold,directions=no
+S, SDV
+*Contact Output
+CDISP, CSTRESS
+**
+**
+*Output, history,frequency=4
+*Energy Output
+ALLIE, ALLSD
+*End Step
+**
+*Step, name=fil222, nlgeom=YES, inc=2000
+*Static
+0.02,0.2, 1e-05, 0.02
+****
+*CONTROLS, PARAMETERS=TIME INCREMENTATION
+, , , , , ,24,10, , , , , ,
+**
+*MODEL CHANGE, TYPE=ELEMENT, ADD=WITH STRAIN
+fil222
+**
+**
+** OUTPUT REQUESTS
+**
+*Output, field, frequency=2
+*Node Output, nset=scaffold_nodes
+RF, U
+*Element Output, elset=scaffold,directions=no
+S, SDV
+*Contact Output
+CDISP, CSTRESS
+**
+**
+*Output, history,frequency=4
+*Energy Output
+ALLIE, ALLSD
+*End Step
+**
+*Step, name=fil223, nlgeom=YES, inc=2000
+*Static
+0.02,0.2, 1e-05, 0.02
+****
+*CONTROLS, PARAMETERS=TIME INCREMENTATION
+, , , , , ,24,10, , , , , ,
+**
+*MODEL CHANGE, TYPE=ELEMENT, ADD=WITH STRAIN
+fil223
+**
+**
+**
+** *Dload, amplitude=activate
+** fil93, GRAV, 9810., 0., 0., 1.0
+** OUTPUT REQUESTS
+**
+*Output, field, frequency=2
+*Node Output, nset=scaffold_nodes
+RF, U
+*Element Output, elset=scaffold,directions=no
+S, SDV
+*Contact Output
+CDISP, CSTRESS
+**
+**
+*Output, history,frequency=4
+*Energy Output
+ALLIE, ALLSD
+*End Step
+**
+*Step, name=fil224, nlgeom=YES, inc=2000
+*Static
+0.02,0.2, 1e-05, 0.02
+****
+*CONTROLS, PARAMETERS=TIME INCREMENTATION
+, , , , , ,24,10, , , , , ,
+**
+*MODEL CHANGE, TYPE=ELEMENT, ADD=WITH STRAIN
+fil224
+**
+**
+**
+** *Dload, amplitude=activate
+** fil92, GRAV, 9810., 0., 0., 1.0
+** OUTPUT REQUESTS
+**
+*Output, field, frequency=2
+*Node Output, nset=scaffold_nodes
+RF, U
+*Element Output, elset=scaffold,directions=no
+S, SDV
+*Contact Output
+CDISP, CSTRESS
+**
+**
+*Output, history,frequency=4
+*Energy Output
+ALLIE, ALLSD
+*End Step
+**
+*Step, name=fil225, nlgeom=YES, inc=2000
+*Static
+0.02,0.2, 1e-05, 0.02
+****
+*CONTROLS, PARAMETERS=TIME INCREMENTATION
+, , , , , ,24,10, , , , , ,
+**
+*MODEL CHANGE, TYPE=ELEMENT, ADD=WITH STRAIN
+fil225
+**
+**
+**
+** *Dload, amplitude=activate
+** fil91, GRAV, 9810., 0., 0., 1.0
+** OUTPUT REQUESTS
+**
+*Output, field, frequency=2
+*Node Output, nset=scaffold_nodes
+RF, U
+*Element Output, elset=scaffold,directions=no
+S, SDV
+*Contact Output
+CDISP, CSTRESS
+**
+**
+*Output, history,frequency=4
+*Energy Output
+ALLIE, ALLSD
+*End Step
+**
+**
+*Step, name=travel43, nlgeom=YES, inc=2000
+*Static
+0.02,0.54, 1e-05, 0.02
+****
+*CONTROLS, PARAMETERS=TIME INCREMENTATION
+, , , , , ,24,10, , , , , ,
+**
+**
+** OUTPUT REQUESTS
+**
+*Output, field, frequency=6
+*Node Output, nset=scaffold_nodes
+RF, U
+*Element Output, elset=scaffold,directions=no
+S, SDV
+*Contact Output
+CDISP, CSTRESS
+**
+**
+*Output, history,frequency=10
+*Energy Output
+ALLIE, ALLSD
+*End Step
+**
+*Step, name=fil215, nlgeom=YES, inc=2000
+*Static
+0.02,0.2, 1e-05, 0.02
+****
+*CONTROLS, PARAMETERS=TIME INCREMENTATION
+, , , , , ,24,10, , , , , ,
+**
+*MODEL CHANGE, TYPE=ELEMENT, ADD=WITH STRAIN
+fil215
+**
+*MODEL CHANGE, TYPE=CONTACT PAIR, ADD
+S13,S21
+S14,S21
+S15,S21
+S16,S21
+S17,S21
+S18,S21
+**
+**
+*Dload, amplitude=activate
+filament_21, GRAV, 9810., 0., 0., 1.0
+** OUTPUT REQUESTS
+**
+*Output, field, frequency=2
+*Node Output, nset=scaffold_nodes
+RF, U
+*Element Output, elset=scaffold,directions=no
+S, SDV
+*Contact Output
+CDISP, CSTRESS
+**
+**
+*Output, history,frequency=4
+*Energy Output
+ALLIE, ALLSD
+*End Step
+**
+*Step, name=fil214, nlgeom=YES, inc=2000
+*Static
+0.02,0.2, 1e-05, 0.02
+****
+*CONTROLS, PARAMETERS=TIME INCREMENTATION
+, , , , , ,24,10, , , , , ,
+**
+*MODEL CHANGE, TYPE=ELEMENT, ADD=WITH STRAIN
+fil214
+**
+**
+**
+** *Dload, amplitude=activate
+** fil102, GRAV, 9810., 0., 0., 1.0
+** OUTPUT REQUESTS
+**
+*Output, field, frequency=2
+*Node Output, nset=scaffold_nodes
+RF, U
+*Element Output, elset=scaffold,directions=no
+S, SDV
+*Contact Output
+CDISP, CSTRESS
+**
+**
+*Output, history,frequency=4
+*Energy Output
+ALLIE, ALLSD
+*End Step
+**
+*Step, name=fil213, nlgeom=YES, inc=2000
+*Static
+0.02,0.2, 1e-05, 0.02
+****
+*CONTROLS, PARAMETERS=TIME INCREMENTATION
+, , , , , ,24,10, , , , , ,
+**
+*MODEL CHANGE, TYPE=ELEMENT, ADD=WITH STRAIN
+fil213
+**
+**
+**
+** *Dload, amplitude=activate
+** fil103, GRAV, 9810., 0., 0., 1.0
+** OUTPUT REQUESTS
+**
+*Output, field, frequency=2
+*Node Output, nset=scaffold_nodes
+RF, U
+*Element Output, elset=scaffold,directions=no
+S, SDV
+*Contact Output
+CDISP, CSTRESS
+**
+**
+*Output, history,frequency=4
+*Energy Output
+ALLIE, ALLSD
+*End Step
+**
+*Step, name=fil212, nlgeom=YES, inc=2000
+*Static
+0.02,0.2, 1e-05, 0.02
+****
+*CONTROLS, PARAMETERS=TIME INCREMENTATION
+, , , , , ,24,10, , , , , ,
+**
+*MODEL CHANGE, TYPE=ELEMENT, ADD=WITH STRAIN
+fil212
+**
+**
+**
+** *Dload, amplitude=activate
+** fil104, GRAV, 9810., 0., 0., 1.0
+** OUTPUT REQUESTS
+**
+*Output, field, frequency=2
+*Node Output, nset=scaffold_nodes
+RF, U
+*Element Output, elset=scaffold,directions=no
+S, SDV
+*Contact Output
+CDISP, CSTRESS
+**
+**
+*Output, history,frequency=4
+*Energy Output
+ALLIE, ALLSD
+*End Step
+**
+*Step, name=fil211, nlgeom=YES, inc=2000
+*Static
+0.02,0.2, 1e-05, 0.02
+****
+*CONTROLS, PARAMETERS=TIME INCREMENTATION
+, , , , , ,24,10, , , , , ,
+**
+*MODEL CHANGE, TYPE=ELEMENT, ADD=WITH STRAIN
+fil211
+**
+**
+**
+** *Dload, amplitude=activate
+** fil104, GRAV, 9810., 0., 0., 1.0
+** OUTPUT REQUESTS
+**
+*Output, field, frequency=2
+*Node Output, nset=scaffold_nodes
+RF, U
+*Element Output, elset=scaffold,directions=no
+S, SDV
+*Contact Output
+CDISP, CSTRESS
+**
+**
+*Output, history,frequency=4
+*Energy Output
+ALLIE, ALLSD
+*End Step
+**
+**
+*Step, name=travel44, nlgeom=YES, inc=2000
+*Static
+0.02,0.54, 1e-05, 0.02
+****
+*CONTROLS, PARAMETERS=TIME INCREMENTATION
+, , , , , ,24,10, , , , , ,
+**
+**
+** OUTPUT REQUESTS
+**
+*Output, field, frequency=6
+*Node Output, nset=scaffold_nodes
+RF, U
+*Element Output, elset=scaffold,directions=no
+S, SDV
+*Contact Output
+CDISP, CSTRESS
+**
+**
+*Output, history,frequency=10
+*Energy Output
+ALLIE, ALLSD
+*End Step
+**
+*Step, name=fil201, nlgeom=YES, inc=2000
+*Static
+0.02,0.2, 1e-05, 0.02
+****
+*CONTROLS, PARAMETERS=TIME INCREMENTATION
+, , , , , ,24,10, , , , , ,
+**
+*MODEL CHANGE, TYPE=ELEMENT, ADD=WITH STRAIN
+fil201
+**
+*MODEL CHANGE, TYPE=CONTACT PAIR, ADD
+S13,S20
+S14,S20
+S15,S20
+S16,S20
+S17,S20
+S18,S20
+**
+**
+**
+*Dload, amplitude=activate
+filament_20, GRAV, 9810., 0., 0., 1.0
+** OUTPUT REQUESTS
+**
+*Output, field, frequency=2
+*Node Output, nset=scaffold_nodes
+RF, U
+*Element Output, elset=scaffold,directions=no
+S, SDV
+*Contact Output
+CDISP, CSTRESS
+**
+**
+*Output, history,frequency=4
+*Energy Output
+ALLIE, ALLSD
+*End Step
+**
+*Step, name=fil202, nlgeom=YES, inc=2000
+*Static
+0.02,0.2, 1e-05, 0.02
+****
+*CONTROLS, PARAMETERS=TIME INCREMENTATION
+, , , , , ,24,10, , , , , ,
+**
+*MODEL CHANGE, TYPE=ELEMENT, ADD=WITH STRAIN
+fil202
+**
+** OUTPUT REQUESTS
+**
+*Output, field, frequency=2
+*Node Output, nset=scaffold_nodes
+RF, U
+*Element Output, elset=scaffold,directions=no
+S, SDV
+*Contact Output
+CDISP, CSTRESS
+**
+**
+*Output, history,frequency=4
+*Energy Output
+ALLIE, ALLSD
+*End Step
+**
+*Step, name=fil203, nlgeom=YES, inc=2000
+*Static
+0.02,0.2, 1e-05, 0.02
+****
+*CONTROLS, PARAMETERS=TIME INCREMENTATION
+, , , , , ,24,10, , , , , ,
+**
+*MODEL CHANGE, TYPE=ELEMENT, ADD=WITH STRAIN
+fil203
+**
+**
+**
+** *Dload, amplitude=activate
+** fil113, GRAV, 9810., 0., 0., 1.0
+** OUTPUT REQUESTS
+**
+*Output, field, frequency=2
+*Node Output, nset=scaffold_nodes
+RF, U
+*Element Output, elset=scaffold,directions=no
+S, SDV
+*Contact Output
+CDISP, CSTRESS
+**
+**
+*Output, history,frequency=4
+*Energy Output
+ALLIE, ALLSD
+*End Step
+**
+*Step, name=fil204, nlgeom=YES, inc=2000
+*Static
+0.02,0.2, 1e-05, 0.02
+****
+*CONTROLS, PARAMETERS=TIME INCREMENTATION
+, , , , , ,24,10, , , , , ,
+**
+*MODEL CHANGE, TYPE=ELEMENT, ADD=WITH STRAIN
+fil204
+**
+**
+**
+** *Dload, amplitude=activate
+** fil112, GRAV, 9810., 0., 0., 1.0
+** OUTPUT REQUESTS
+**
+*Output, field, frequency=2
+*Node Output, nset=scaffold_nodes
+RF, U
+*Element Output, elset=scaffold,directions=no
+S, SDV
+*Contact Output
+CDISP, CSTRESS
+**
+**
+*Output, history,frequency=4
+*Energy Output
+ALLIE, ALLSD
+*End Step
+**
+*Step, name=fil205, nlgeom=YES, inc=2000
+*Static
+0.02,0.2, 1e-05, 0.02
+****
+*CONTROLS, PARAMETERS=TIME INCREMENTATION
+, , , , , ,24,10, , , , , ,
+**
+*MODEL CHANGE, TYPE=ELEMENT, ADD=WITH STRAIN
+fil205
+**
+**
+**
+** *Dload, amplitude=activate
+** fil111, GRAV, 9810., 0., 0., 1.0
+** OUTPUT REQUESTS
+**
+*Output, field, frequency=2
+*Node Output, nset=scaffold_nodes
+RF, U
+*Element Output, elset=scaffold,directions=no
+S, SDV
+*Contact Output
+CDISP, CSTRESS
+**
+**
+*Output, history,frequency=4
+*Energy Output
+ALLIE, ALLSD
+*End Step
+**
+**
+*Step, name=travel45, nlgeom=YES, inc=2000
+*Static
+0.02,0.54, 1e-05, 0.02
+****
+*CONTROLS, PARAMETERS=TIME INCREMENTATION
+, , , , , ,24,10, , , , , ,
+**
+**
+** OUTPUT REQUESTS
+**
+*Output, field, frequency=6
+*Node Output, nset=scaffold_nodes
+RF, U
+*Element Output, elset=scaffold,directions=no
+S, SDV
+*Contact Output
+CDISP, CSTRESS
+**
+**
+*Output, history,frequency=10
+*Energy Output
+ALLIE, ALLSD
+*End Step
+**
+*Step, name=fil195, nlgeom=YES, inc=2000
+*Static
+0.02,0.2, 1e-05, 0.02
+****
+*CONTROLS, PARAMETERS=TIME INCREMENTATION
+, , , , , ,24,10, , , , , ,
+**
+*MODEL CHANGE, TYPE=ELEMENT, ADD=WITH STRAIN
+fil195
+**
+*MODEL CHANGE, TYPE=CONTACT PAIR, ADD
+S13,S19
+S14,S19
+S15,S19
+S16,S19
+S17,S19
+S18,S19
+**
+**
+*Dload, amplitude=activate
+filament_19, GRAV, 9810., 0., 0., 1.0
+** OUTPUT REQUESTS
+**
+*Output, field, frequency=2
+*Node Output, nset=scaffold_nodes
+RF, U
+*Element Output, elset=scaffold,directions=no
+S, SDV
+*Contact Output
+CDISP, CSTRESS
+**
+**
+*Output, history,frequency=4
+*Energy Output
+ALLIE, ALLSD
+*End Step
+**
+*Step, name=fil194, nlgeom=YES, inc=2000
+*Static
+0.02,0.2, 1e-05, 0.02
+****
+*CONTROLS, PARAMETERS=TIME INCREMENTATION
+, , , , , ,24,10, , , , , ,
+**
+*MODEL CHANGE, TYPE=ELEMENT, ADD=WITH STRAIN
+fil194
+**
+**
+**
+** *Dload, amplitude=activate
+** fil122, GRAV, 9810., 0., 0., 1.0
+** OUTPUT REQUESTS
+**
+*Output, field, frequency=2
+*Node Output, nset=scaffold_nodes
+RF, U
+*Element Output, elset=scaffold,directions=no
+S, SDV
+*Contact Output
+CDISP, CSTRESS
+**
+**
+*Output, history,frequency=4
+*Energy Output
+ALLIE, ALLSD
+*End Step
+**
+*Step, name=fil193, nlgeom=YES, inc=2000
+*Static
+0.02,0.2, 1e-05, 0.02
+****
+*CONTROLS, PARAMETERS=TIME INCREMENTATION
+, , , , , ,24,10, , , , , ,
+**
+*MODEL CHANGE, TYPE=ELEMENT, ADD=WITH STRAIN
+fil193
+**
+**
+**
+** *Dload, amplitude=activate
+** fil123, GRAV, 9810., 0., 0., 1.0
+** OUTPUT REQUESTS
+**
+*Output, field, frequency=2
+*Node Output, nset=scaffold_nodes
+RF, U
+*Element Output, elset=scaffold,directions=no
+S, SDV
+*Contact Output
+CDISP, CSTRESS
+**
+**
+*Output, history,frequency=4
+*Energy Output
+ALLIE, ALLSD
+*End Step
+**
+*Step, name=fil192, nlgeom=YES, inc=2000
+*Static
+0.02,0.2, 1e-05, 0.02
+****
+*CONTROLS, PARAMETERS=TIME INCREMENTATION
+, , , , , ,24,10, , , , , ,
+**
+*MODEL CHANGE, TYPE=ELEMENT, ADD=WITH STRAIN
+fil192
+**
+**
+**
+** *Dload, amplitude=activate
+** fil124, GRAV, 9810., 0., 0., 1.0
+** OUTPUT REQUESTS
+**
+*Output, field, frequency=2
+*Node Output, nset=scaffold_nodes
+RF, U
+*Element Output, elset=scaffold,directions=no
+S, SDV
+*Contact Output
+CDISP, CSTRESS
+**
+**
+*Output, history,frequency=4
+*Energy Output
+ALLIE, ALLSD
+*End Step
+**
+*Step, name=fil191, nlgeom=YES, inc=2000
+*Static
+0.02,0.2, 1e-05, 0.02
+****
+*CONTROLS, PARAMETERS=TIME INCREMENTATION
+, , , , , ,24,10, , , , , ,
+**
+*MODEL CHANGE, TYPE=ELEMENT, ADD=WITH STRAIN
+fil191
+**
+**
+**
+** *Dload, amplitude=activate
+** fil124, GRAV, 9810., 0., 0., 1.0
+** OUTPUT REQUESTS
+**
+*Output, field, frequency=2
+*Node Output, nset=scaffold_nodes
+RF, U
+*Element Output, elset=scaffold,directions=no
+S, SDV
+*Contact Output
+CDISP, CSTRESS
+**
+**
+*Output, history,frequency=4
+*Energy Output
+ALLIE, ALLSD
+*End Step
